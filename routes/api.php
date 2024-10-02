@@ -16,6 +16,8 @@ use App\Http\Controllers\Api\PageController;
 */
  //tutte le rotte presenti in api.php saranno precedute da api/
 Route::get('/' ,[PageController::class, 'index']);
+Route::get('/tutte-le-tecnologie' ,[PageController::class, 'allTechnology']);
+Route::get('/tutte-le-categorie' ,[PageController::class, 'allCategory']);
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();

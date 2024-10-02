@@ -25,13 +25,13 @@ class PageController extends Controller
         return response()->json($response);
     }
 
-    public function Technology(){
+    public function allTechnology(){
              // api che restitutisce tutte le tecnologie 
              $allTechnology = Technology::all();
         return response()->json($allTechnology);
     }
 
-    public function Category(){
+    public function allCategory(){
         // api che restitutisce tutte le categorie 
         $allCategory = Category::all();
            return response()->json($allCategory);
